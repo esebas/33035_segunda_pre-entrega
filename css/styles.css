@@ -38,10 +38,10 @@ body {
 }
 
 .header_no-index {
-    background-color: rgba(67, 142, 212, 0.308);
+    background-color: hsla(325, 61%, 39%, 0.397);
     padding: 15px;
     /* position:absolute; */
-    color: rgb(31, 80, 145);
+    color:white;
     /* el background transparente y posicion absolute
     hace que la imagen abarque el nav */
     width: 100vw;
@@ -86,152 +86,21 @@ body {
 }
 
 .nav-link-2 {
-    color: rgb(31, 80, 145);
+    color: white;
     ;
 }
 
-@media(min-width:520px) {
-
-    .header,
-    .header_no-index {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-
-    .header__nav {
-        width: 50%;
-        /* para que se distribuya el texto y no queden juntos */
-    }
-
-
-    .contenedor-g {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* grid-template-rows: minmax(100px, auto); */
-        gap: 0.5em;
-
-    }
-
-    .contenedor__favoritos-g {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 0.5em;
-
-    }
-
-    .contenedor__patrocinadores-g {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap: 1em;
-
-    }
-
+.logo_img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
 }
 
-
-@media(min-width:768px) {
-
-    .header,
-    .header_no-index {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-
-    .header__nav {
-        width: 50%;
-        /* para que se distribuya el texto y no queden juntos */
-    }
-
-
-    .contenedor-g {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.5em;
-
-    }
-
-    .contenedor__favoritos-g {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 0.5em;
-
-    }
-
-    .contenedor__patrocinadores-g {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        gap: 1em;
-
-    }
-
+.contacto__img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
 }
-
-@media(min-width:1200px) {
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .hero__text {
-        font-size: 4rem;
-        padding: 30px 100px 30px 100px;
-        text-align: center;
-        color: azure;
-        background-color: hsla(325, 61%, 39%, 0.397);
-    }
-
-    .header h1 {
-        font-size: 2rem;
-    }
-
-    .header__nav {
-        width: 50%;
-    }
-
-
-    .contenedor-g {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.5em;
-
-    }
-
-    .contenedor__favoritos-g {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: space-around;
-        gap: 0.5em;
-
-    }
-
-
-    .contenedor__patrocinadores-g {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        align-items: center;
-        gap: 1em;
-
-    }
-
-    .producto-xl {
-        display: block;
-    }
-
-}
-
-/* FIN DEL MEDIA 1200 */
 
 
 /*  Hero Section */
@@ -401,7 +270,9 @@ body {
 
 .contacto__mapa {
     display: flex;
+    width: 95%;
     justify-content: center;
+    align-items: center;
 }
 
 .contacto__img {
@@ -415,10 +286,12 @@ body {
     border: 3px solid hsla(325, 61%, 39%, 0.397);
     padding: 20px;
     margin: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 40%;
+    display: grid;
+
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    width: 90%;
+    height: 30vh;
 
 }
 
@@ -431,7 +304,7 @@ body {
 
 
 .contacto__formulario {
-    width: 460px;
+    width: 90%;
     height: auto;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -440,8 +313,8 @@ body {
 
 
 input {
-    width: 408px;
-    height: 40px;
+    width: 100%;
+    /* height: autopx; */
     border-style: solid;
     border-width: 1px;
     margin-top: 10px;
@@ -451,7 +324,7 @@ input {
 
 
 textarea {
-    width: 405px;
+    width: 100%;
     height: 150px;
     border-style: solid;
     border-width: 1px;
@@ -474,3 +347,241 @@ textarea {
     margin-bottom: 10px;
     width: 100%;
 }
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++ SECCION SERVICIOS+++++++++++++++++*/
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* .servicios__main {
+    background-color: yellow;
+} */
+
+.servicios__section {
+    margin: 5%;
+    padding: 10px;
+    /* background-color: aqua; */
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    font-size: 0.8em;
+    flex-direction: row;
+    color: hsla(325, 61%, 39%, 0.397);
+}
+
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++ INICIO LOS MEDIA QUERIES +++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media(min-width:520px) {
+
+    .header,
+    .header_no-index {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .header__nav {
+        width: 50%;
+        /* para que se distribuya el texto y no queden juntos */
+    }
+
+
+    .contenedor-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: minmax(100px, auto); */
+        gap: 0.5em;
+
+    }
+
+    .contenedor__favoritos-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0.5em;
+
+    }
+
+    .contenedor__patrocinadores-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1em;
+
+    }
+
+    .contacto__formulario {
+        width: 460px;
+    }
+
+
+    input {
+        width: 408px;
+    }
+
+
+    textarea {
+        width: 405px;
+    }
+
+}
+
+
+
+
+@media(min-width:768px) {
+
+    .header,
+    .header_no-index {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .header__nav {
+        width: 50%;
+        /* para que se distribuya el texto y no queden juntos */
+    }
+
+
+    .contenedor-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+
+    }
+
+    .contenedor__contacto-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+
+    }
+
+    .contenedor__favoritos-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0.5em;
+
+    }
+
+    .contenedor__patrocinadores-g {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 1em;
+
+    }
+
+
+    .contacto__formulario {
+        width: 460px;
+
+    }
+
+
+    input {
+        width: 408px;
+
+    }
+
+
+    textarea {
+        width: 405px;
+
+    }
+
+    .servicios__section {
+
+        font-size: 1em;
+
+    }
+
+
+}
+
+@media(min-width:1200px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero__text {
+        font-size: 2rem;
+        padding: 30px 100px 30px 100px;
+        text-align: center;
+        color: azure;
+        background-color: hsla(325, 61%, 39%, 0.397);
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header__nav {
+        width: 50%;
+    }
+
+
+    .contenedor-g {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5em;
+
+    }
+
+    .contenedor__favoritos-g {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-around;
+        gap: 0.5em;
+
+    }
+
+
+    .contenedor__patrocinadores-g {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        gap: 1em;
+
+    }
+
+    .producto-xl {
+        display: block;
+    }
+
+    .contacto_cajitas {
+        height: 250px;
+    }
+
+    .servicios__section {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+
+        font-size: 1.2em;
+
+    }
+
+}
+
+/* FIN DEL MEDIA 1200 */
