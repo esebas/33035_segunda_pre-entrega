@@ -1,6 +1,6 @@
-Comentarios:
+# Comentarios:
 
-Ajustes de Entrega 1:
+## Ajustes de Entrega 1:
 - Se sacó el section en el footer.
 
 Respecto a la entrega inicial se agregó:
@@ -14,8 +14,9 @@ Respecto a la entrega inicial se agregó:
 -Versionado en Github
 -etc
 
-Ajustes por feedback de entrega 2:
+## Ajustes por feedback de entrega 2:
 
+```python
 - Hay scroll horizontal, esto es debido a que en el navbar tenes "width: 100vw" y position: absolute en el mismo. Una forma de solucionarlo quizás es reemplazando el width: 100vw a width: 100% y el position: relative en el body agregarlo.
 NOTA SE: era el with de nav. Solucionado
 
@@ -32,8 +33,9 @@ Nota SE: Se cambiaron segun sugerencias
 - Cuando tengas que utilizar "cajas" vacías, te recomiendo usar Grid y no flex, ya que es más fácil manejar este tipo de casos con Grid.
 
 - Recorda que el h1 Solo debe contener texto y no un enlace dentro (un elemento "a").
+```
 
-Ajustes para Entrega 3:
+## Ajustes para Entrega 3:
 
 - Se agrego sasss y carpetas segun metodologia explicada.
 
