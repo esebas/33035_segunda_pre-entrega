@@ -41,4 +41,4 @@ Ajustes para Entrega 3:
 
 - uso de _pages.scss para organizar los estilos
 
-- 
+- ajuste y alineamiento de cajas contenedoras
