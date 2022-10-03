@@ -1,23 +1,47 @@
 @import "../utils/variables";
-
+@import "../utils/mixins";
 
 %header_molde {
     background-color: $color-transparente;
     padding: 15px;
     position: absolute;
-    width: 99%; 
+    width: 99%;
 }
 
 
-.header{
+.header {
     @extend %header_molde;
 
+    @include mobile-md () {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_nav {
+        @include mobile-md () {
+            width: 50%;
+        }
+    }
+
+    @include mobile-lg() {
+        display: flex;
+        //justify-content: space-between;
+        //align-items: center;
+
+        & h1 {
+            font-size: 2rem;
+        }
+
+        &__nav {
+            width: 50%;
+        }
+    }
 
     &__logo {
         display: flex;
         align-items: center;
         justify-content: center;
-    
+
     }
 
     &__logo img {
@@ -34,11 +58,12 @@
         justify-content: space-around;
     }
 
-    & h1, &_no-index {
+    & h1,
+    &_no-index {
         color: cornsilk;
         margin-left: 10px;
         font-size: 1rem;
-        
+
     }
 
     &_no-index {
@@ -46,10 +71,29 @@
         width: 100%;
         position: relative;
         background-color: $color-seccion-titulo-fondo;
+
+        @include mobile-md () {
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @include mobile-lg() {
+            display: flex;
+
+            & h1 {
+                font-size: 2rem;
+            }
+
+            &__nav {
+                width: 50%;
+            }
+        }
     }
 }
 
-.nav-link, .nav-link-2 {
+.nav-link,
+.nav-link-2 {
     color: white;
 }
 
