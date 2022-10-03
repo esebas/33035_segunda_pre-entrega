@@ -1,0 +1,98 @@
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++ ARMO LAS CLASES EXCLUSIVAS PARA CONTACTO ++++++*/
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.contacto__tituloppal {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__mapa {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    align-items: flex-end;
+}
+
+.contacto_cajitas {
+    border: 3px solid $color-seccion-titulo-letra;
+    padding: 20px;
+    margin: 10px;
+    display: grid;
+
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    width: 90%;
+    height: 30vh;
+
+}
+
+.contacto__seccion__a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contacto__formulario {
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+
+input {
+    width: 100%;
+    /* height: autopx; */
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.contacto__subtitulo {
+    text-align: center;
+    align-items: center;
+    color: $color-seccion-titulo-fondo;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contacto__img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+

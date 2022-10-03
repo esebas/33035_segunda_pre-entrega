@@ -1,0 +1,392 @@
+/*  HEADER */
+
+@import "./utils/variables";
+@import "./layout/header";
+@import "./base/reset";
+@import "./pages/contacto";
+@import "./layout/footer";
+
+
+
+
+
+/*  Hero Section */
+
+.hero {
+    grid-area: hero;
+    height: 100vh;
+    background-image: url(../assets/img/portada2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        padding: 30px 100px 30px 100px;
+        text-align: center;
+        color: azure;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo img {
+        padding: 5px;
+        width: 40px;
+    }
+
+}
+
+
+/* Comienzo a armar la seccion novedades */
+
+.titulo__titulo {
+    grid-area: titulo;
+    background-color: $color-seccion-titulo-fondo;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-seccion-titulo-letra;
+    padding: 20px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    width: 100%;
+    box-shadow: 0 1rem 1rem $color-seccion-titulo-sombra;
+}
+
+.section-novedades__title {
+    text-align: center;
+    padding: 20px;
+}
+
+
+%molde_cajita {
+    width: 100%;
+    height: 100%;
+    grid-area: nota;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.cajita {
+    @extend %molde_cajita;
+
+    &-g {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    &__img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+
+    &__texto {
+        margin: 20px 10px 20px 10px;
+        color: blueviolet;
+        height: 20%;
+        font-size: 1em;
+        font-style: "Roboto";
+
+    }
+
+    &__titulo {
+        padding: 20px;
+        color: $color-seccion-titulo-fondo;
+        height: max-content;
+    }
+
+    &__masinfo {
+        background-color: $color-seccion-titulo-fondo;
+        color: $color-cajita-fondo;
+        padding: 10px 30px 10px 30px;
+
+    }
+
+    &__masinfo:hover {
+        background-color: $color-cajita-fondo;
+        color: blue;
+    }
+
+}
+
+
+/* Agrego funcionalidad para manejar el iframe de video */
+
+.container__video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++ SECCION SERVICIOS++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.servicios__section {
+    margin: 20px;
+    padding: 10px;
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    font-size: 0.8em;
+    flex-direction: row;
+    color: $color-seccion-titulo-fondo;
+}
+
+
+.margen {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++ INICIO LOS MEDIA QUERIES +++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++
+
+// @mixin mobile {
+//     @media (min-width: 520px) {
+//         @content
+//     }
+// }
+
+
+
+@media(min-width:520px) {
+
+    .header,
+    .header_no-index {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .header__nav {
+        width: 50%;
+        /* para que se distribuya el texto y no queden juntos */
+    }
+
+
+    .contenedor-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+
+    }
+
+    .contenedor__favoritos-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0.5em;
+
+    }
+
+    .contenedor__patrocinadores-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1em;
+
+
+    }
+
+    .contacto__formulario {
+        width: 460px;
+    }
+
+
+    input {
+        width: 408px;
+    }
+
+
+    textarea {
+        width: 405px;
+    }
+
+
+
+}
+
+
+
+
+@media(min-width:768px) {
+
+    .header,
+    .header_no-index {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .header__nav {
+        width: 50%;
+        // para que se distribuya el texto y no queden juntos
+    }
+
+
+
+
+    .contenedor__contacto-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+
+    }
+
+    .contenedor__favoritos-g {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 0.5em;
+
+    }
+
+    .contenedor__patrocinadores-g {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 1em;
+
+    }
+
+
+    .contacto__formulario {
+        width: 460px;
+
+    }
+
+
+    input {
+        width: 408px;
+
+    }
+
+
+    textarea {
+        width: 405px;
+
+    }
+
+    .servicios__section {
+
+        font-size: 1em;
+
+    }
+
+
+
+}
+
+@media(min-width:1200px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero__text {
+        font-size: 2rem;
+        padding: 30px 100px 30px 100px;
+        text-align: center;
+        color: azure;
+        background-color: $color-seccion-titulo-fondo;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header__nav {
+        width: 50%;
+    }
+
+    .margen {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+    .contenedor-g {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5em;
+
+    }
+
+    .contenedor__favoritos-g {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-around;
+        gap: 0.5em;
+
+    }
+
+
+    .contenedor__patrocinadores-g {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        gap: 1em;
+
+    }
+
+    .producto-xl {
+        display: block;
+    }
+
+    .contacto_cajitas {
+        height: 250px;
+    }
+
+    .servicios__section {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+
+        font-size: 1.2em;
+
+    }
+
+    .ocultar-div {
+        display: block;
+    }
+
+
+}
+
+// FIN DEL MEDIA 1200

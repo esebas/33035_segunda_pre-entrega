@@ -1,0 +1,60 @@
+@import "../utils/variables";
+
+
+%header_molde {
+    background-color: $color-transparente;
+    padding: 15px;
+    position: absolute;
+    width: 99%; 
+}
+
+
+.header{
+    @extend %header_molde;
+
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    &__logo img {
+        padding: 5px;
+        width: 100px;
+    }
+
+    &__title {
+        padding: 10px;
+    }
+
+    &__nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    & h1, &_no-index {
+        color: cornsilk;
+        margin-left: 10px;
+        font-size: 1rem;
+        
+    }
+
+    &_no-index {
+        @extend %header_molde;
+        width: 100%;
+        position: relative;
+        background-color: $color-seccion-titulo-fondo;
+    }
+}
+
+.nav-link, .nav-link-2 {
+    color: white;
+}
+
+.logo_img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
