@@ -36,7 +36,7 @@ Nota SE: Se cambiaron segun sugerencias
 ```
 
 ## Ajustes para Entrega 3:
-
+```python
 - Se agrego sasss y carpetas segun metodologia explicada.
 
 - Uso de variables
@@ -44,3 +44,8 @@ Nota SE: Se cambiaron segun sugerencias
 - uso de _pages.scss para organizar los estilos
 
 - ajuste y alineamiento de cajas contenedoras
+
+- Breakpoints con mixins
+
+- mixins, include, nesting, etc para reducir y simplificar el código
+```
