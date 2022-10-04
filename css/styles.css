@@ -2,7 +2,8 @@
   background-color: rgba(248, 246, 246, 0);
   padding: 15px;
   position: absolute;
-  width: 99%;
+  width: 100vw;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -19,6 +20,8 @@
 @media (min-width: 1200px) {
   .header {
     display: flex;
+    color: cornsilk;
+    width: 100vw;
   }
   .header h1 {
     font-size: 2rem;
@@ -43,15 +46,15 @@
   display: flex;
   justify-content: space-around;
 }
-.header h1, .header_no-index {
+.header_no-index {
   color: cornsilk;
-  margin-left: 10px;
-  font-size: 1rem;
+  font-size: 2rem;
+  width: 100vw;
 }
 .header_no-index {
-  width: 100%;
   position: relative;
   background-color: hsla(325deg, 61%, 39%, 0.397);
+  font-size: 1rem;
 }
 @media (min-width: 768px) {
   .header_no-index {
@@ -103,19 +106,28 @@ body {
   font-family: sans-serif;
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* +++++++ ARMO LAS CLASES EXCLUSIVAS PARA CONTACTO ++++++*/
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+h4 {
+  font-family: "Times New Roman";
+}
+
 .contacto__tituloppal {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 .contacto__mapa {
-  display: flex;
-  width: 95%;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.contacto__mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .contacto__img {
   height: 100px;
@@ -394,56 +406,6 @@ textarea {
   }
 }
 @media (min-width: 1200px) {
-  .contenedor-g {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5em;
-  }
-  .contenedor-g__patrocinadores-g {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
-    gap: 1em;
-  }
-  .producto-xl {
-    display: block;
-  }
-  .contacto_cajitas {
-    height: 250px;
-  }
-  .servicios__section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto;
-    font-size: 1.2em;
-  }
-}
-@media (min-width: 520px) {
-  .contenedor-g {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5em;
-  }
-  .titulo__titulo {
-    margin-bottom: 2%;
-  }
-  .contenedor__favoritos-g {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5em;
-  }
-  .contenedor__patrocinadores-g {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1em;
-  }
-}
-@media (min-width: 1200px) {
-  .margen {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
   .contenedor-g {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

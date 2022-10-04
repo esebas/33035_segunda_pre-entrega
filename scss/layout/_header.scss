@@ -5,7 +5,8 @@
     background-color: $color-transparente;
     padding: 15px;
     position: absolute;
-    width: 99%;
+    width: 100vw;
+    font-size: 1rem;
 }
 
 
@@ -25,6 +26,10 @@
 
     @include mobile-lg() {
         display: flex;
+        color: cornsilk;
+        //margin-left: 10px;
+        width: 100vw;
+        
         //justify-content: space-between;
         //align-items: center;
 
@@ -58,19 +63,20 @@
         justify-content: space-around;
     }
 
-    & h1,
-    &_no-index {
+    &_no-index{
         color: cornsilk;
-        margin-left: 10px;
-        font-size: 1rem;
+        //margin-left: 10px;
+        font-size: 2rem;
+        width: 100vw;
 
     }
 
     &_no-index {
         @extend %header_molde;
-        width: 100%;
+        // width: 99%;
         position: relative;
         background-color: $color-seccion-titulo-fondo;
+        font-size: 1rem;
 
         @include mobile-md () {
 

@@ -1,0 +1,21 @@
+{
+  "name": "entregable-2",
+  "version": "1.0.0",
+  "description": "- Se sacó el section en el footer.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rnsass": "sass --watch scc/main.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esebas/33035_segunda_pre-entrega.git"
+  },
+  "author": "Sebastian Esquitin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esebas/33035_segunda_pre-entrega/issues"
+  },
+  "homepage": "https://github.com/esebas/33035_segunda_pre-entrega#readme"
+}
