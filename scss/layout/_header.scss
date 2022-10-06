@@ -5,7 +5,7 @@
     background-color: $color-transparente;
     padding: 15px;
     position: absolute;
-    width: 90vw;
+    width: 100%;
     font-size: 1rem;
 }
 
@@ -28,7 +28,7 @@
         display: flex;
         color: cornsilk;
         //margin-left: 10px;
-        width: 100vw;
+        //width: 100vw;
         
         //justify-content: space-between;
         //align-items: center;
@@ -67,7 +67,7 @@
         color: cornsilk;
         //margin-left: 10px;
         font-size: 2rem;
-        width: 100vw;
+        width: 100%;
 
     }
 
