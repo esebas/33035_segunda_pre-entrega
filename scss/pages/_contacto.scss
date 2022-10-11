@@ -1,3 +1,5 @@
+@import "../utils/variables";
+@import "../utils/mixins";
 
 .contacto {
     &__tituloppal {
@@ -27,12 +29,15 @@
         align-items: flex-end;
     }
     &_cajitas {
-        border: 3px solid $color-seccion-titulo-letra;
+        border: 1px solid $color-seccion-titulo-letra;
         padding: 20px;
         margin: 10px;
+        //margin-left: 35px;
+        gap: 10px;
         display: grid;
-        width: 90%;
-        height: 30vh;    
+        width: 95%;
+        height: 100%;
+
     }
     &__seccion__a {
         display: flex;
@@ -42,13 +47,18 @@
     &__formulario {
         width: 90%;
         height: auto;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        padding-left: 30px;
+        //padding-top: 10px;
+        //padding-bottom: 20px;
+        //padding-left: 30px;
 
         @include mobile-sm(){
             width: 460px;
         }
+    }
+    &__titulo{
+        text-align: center;
+        align-items: center;
+        color: $color-seccion-titulo-letra;
     }
     &__subtitulo {
         text-align: center;
@@ -94,3 +104,21 @@ textarea {
     }
 }
 
+
+
+@media(min-width:768px) {
+
+    .contenedor__contacto-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+        margin:20px;
+    }
+}
+
+@media(min-width:768px) {
+
+    .contenedor__contacto-g {
+        justify-content: center;
+    }
+}

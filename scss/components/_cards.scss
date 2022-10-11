@@ -31,9 +31,9 @@
     &__texto {
         margin: 20px 10px 20px 10px;
         color: blueviolet;
-        height: 20%;
+        //height: 20%;
         font-size: 1em;
-        font-style: "Roboto";
+        align-items: center;
 
     }
 
@@ -56,7 +56,6 @@
     }
 
 }
-
 
 
 // Comienzo a armar la seccion novedades
@@ -154,33 +153,20 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5em;
     }
-
-
     .contenedor__favoritos-g {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5em;
     }
-
-
 }
 
 @media(min-width:768px) {
-
-    .contenedor__contacto-g {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5em;
-    }
 
     .contenedor__favoritos-g {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0.5em;
     }
-
-
-
 }
 
 
@@ -201,10 +187,6 @@
 
     .producto-xl {
         display: block;
-    }
-
-    .contacto_cajitas {
-        height: 250px;
     }
 
     .servicios__section {
