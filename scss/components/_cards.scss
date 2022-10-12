@@ -58,6 +58,16 @@
 }
 
 
+.cajita:hover{
+    //background-color: rgb(62,62,62);
+    //color: white;
+    cursor:pointer;
+    transform:scale(1.03);
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+
 // Comienzo a armar la seccion novedades
 
 .titulo__titulo {
